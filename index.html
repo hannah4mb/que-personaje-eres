@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>¿Qué personaje eres?</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <section id="inicio" class="pantalla">
+            <div class="misterio">?</div>
+            <p class="subtitulo">DESCUBRE TU PERSONAJE</p>
+            <h1>¿Qué personaje eres?</h1>
+            <p class="descripcion">
+                Responde cinco preguntas y descubre
+                qué personaje se parece más a ti.
+            </p>
+            <button id="btnComenzar">
+                COMENZAR
+            </button>
+
+        </section>
+
+
+        
+        <section id="cuestionario" class="pantalla oculto">
+
+            
+            <p id="numeroPregunta">
+                PREGUNTA 1 DE 5
+            </p>
+
+            <div class="progreso">
+                <span class="punto activo"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+            </div>
+
+            <h2 id="pregunta">
+                Pregunta
+            </h2>
+
+            <div id="opciones" class="opciones">
+            </div>
+
+            <button id="btnSiguiente" disabled>
+                SIGUIENTE →
+            </button>
+
+        </section>
+
+        <section id="resultado" class="pantalla oculto">
+
+            <p class="subtitulo">
+                TU PERSONAJE ES...
+            </p>
+
+            <!-- La imagen solamente aparece al final -->
+            <img
+                id="imagenResultado"
+                src=""
+                alt="Personaje obtenido"
+            >
+
+            <h2 id="nombreResultado">
+                Personaje
+            </h2>
+
+            <p id="universoResultado">
+                Universo
+            </p>
+
+            <p id="descripcionResultado">
+                Descripción del personaje.
+            </p>
+
+            <button id="btnReiniciar">
+                VOLVER A JUGAR
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
